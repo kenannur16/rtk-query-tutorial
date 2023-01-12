@@ -13,13 +13,10 @@ import { jokesApi } from "./query/apiSlice";
 function App() {
   return (
     <Provider store={store}>
-      <ApiProvider api={jokesApi}>
-        <Container>
-          
-          <br></br>
-          <Jokess />
-        </Container>
-      </ApiProvider>
+      <Container>
+        <br></br>
+        <Jokess />
+      </Container>
     </Provider>
   );
 }
