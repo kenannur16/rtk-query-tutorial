@@ -1,23 +1,24 @@
-import { Counter } from "./counter";
-import Footer from "./Footer";
-import { Jokess } from "./Jokess";
-import { Container } from "reactstrap";
-// birader bu nasil import??
-// import { store } from "/Users/macmini/Desktop/RTK_COUNTER/src/app/store.js";
-import { store } from "./app/store.js";
-import { Provider } from "react-redux";
-
-import { ApiProvider } from "@reduxjs/toolkit/dist/query/react";
-import { jokesApi } from "./query/apiSlice";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    <Provider store={store}>
-      <Container>
-        <br></br>
-        <Jokess />
-      </Container>
-    </Provider>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
